@@ -1,0 +1,52 @@
+@import "homepage";
+@import "landing";
+@import "slider";
+@import "recipes";
+@import "about";
+
+
+$sub-font: 'Raleway', sans-serif;
+$main-font: 'Bad Script', cursive;
+$main-color: rgb(113, 138, 111);
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+
+html {
+   
+    font-size: 62.5%;
+    font-family: $sub-font;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+a{ 
+    text-decoration: none !important;
+ }
+
+ h1{
+     font-size: 7rem;
+     color: $main-color;
+     font-family: $main-font;
+ }
+
+
+ h3{
+    color: $main-color;
+ }
+ 
+ p{
+     color: $main-color;
+ }
+
+ .logo-container{
+     margin-top: 7%;
+ }
