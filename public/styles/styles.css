@@ -15,54 +15,15 @@
   z-index: -1;
 }
 
-.nav-container {
-  width: 50%;
-  padding: 1 2rem;
-}
-
-.nav-container .logo-container {
-  border-radius: 50%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#70816b), to(#718a6f));
-  background-image: linear-gradient(180deg, #70816b, #718a6f);
-  width: 6rem;
-  height: 6rem;
-}
-
-.nav-container #logo {
-  font-size: 0.1rem;
-  color: white;
-  font-family: "Bad Script", cursive;
+.homepage .heading {
+  color: #718a6f;
   text-align: center;
-  padding-top: 15%;
-}
-
-.nav-container ul {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-  font-size: 1.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none;
-}
-
-.nav-container li {
-  font-family: "Raleway", sans-serif;
-  color: #718a6f;
-}
-
-.heading {
-  color: #718a6f;
-  margin: 30% 15%;
   font-family: "Bad Script", cursive;
+  margin: 15% 5%;
+  width: 45%;
+  height: 20%;
+  background-color: #2e3d31;
+  border-radius: 5px;
 }
 
 .landing {
@@ -107,7 +68,7 @@
 }
 
 .recipe-page .bg-image {
-  min-height: 100%;
+  min-height: 70%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -115,18 +76,19 @@
 }
 
 .recipe-page .img1 {
-  background-image: url("../assets/2.jpg");
+  background-image: url("../assets/7.jpg");
 }
 
 .recipe-page .img2 {
-  background-image: url("../assets/3.jpg");
+  background-image: url("../assets/6.jpg");
 }
 
 .recipe-page .img3 {
-  background-image: url("../assets/4.jpg");
+  background-image: url("../assets/7.jpg");
 }
 
 .recipe-page .flex-box-container {
+  padding: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,16 +104,35 @@
 }
 
 .recipe-page h1 {
-  margin: 30;
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
+  color: #2e3d31;
+  margin: 2% 6%;
+}
+
+.recipe-page .main-header {
+  margin: 10% auto;
   text-align: center;
-  font-family: "Bad Script", cursive;
+  width: 50%;
+  height: 20%;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+
+.recipe-page .recipe-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #2e3d31;
+  border: #2e3d31;
+}
+
+.recipe-page .recipe-card:hover h3, .recipe-page .recipe-card:hover li, .recipe-page .recipe-card:hover .nutrition-rating {
+  color: white;
 }
 
 .recipe-page .recipe-card {
   width: 35%;
   border: solid #718a6f;
+  border-radius: 5px;
   margin-bottom: 20;
 }
 
@@ -181,6 +162,12 @@
   color: #718a6f;
   margin: 30 0;
   list-style: none;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.recipe-page .recipe-card li {
+  font-size: 1.3rem;
 }
 
 .recipe-page .recipe-card ol {
@@ -197,13 +184,13 @@
   content: "Step " counter(elementcounter);
   counter-increment: elementcounter;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-decoration: underline;
   padding: 10 0;
 }
 
 .about-page h1 {
-  text-align: center;
+  margin-left: 30px;
   color: #2e3d31;
 }
 
@@ -234,8 +221,8 @@
   margin-top: 1.5%;
   height: 15%;
   width: 70%;
-  background: #718a6f;
-  opacity: 0.7;
+  background: #2e3d31;
+  border-radius: 5px;
 }
 
 .about-page .text-containers p {
@@ -245,8 +232,99 @@
 }
 
 .about-page .tc1, .about-page .tc2, .about-page .tc3 {
-  -webkit-transform: translateX(-150%);
-          transform: translateX(-150%);
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+.contact-page .main-header {
+  margin: 10% auto;
+  width: 50%;
+  height: 20%;
+  background-color: #2e3d31;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+.contact-page h1 {
+  text-align: center;
+  color: white;
+}
+
+.contact-page .bg-image {
+  min-height: 80%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-page .img1 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2))), url("../assets/11.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url("../assets/11.jpg");
+}
+
+.contact-page .img2 {
+  background-color: #2e3d31;
+}
+
+.contact-page .flex-container {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact-page .social-icons {
+  font-size: 5rem;
+  color: #2e3d31;
+}
+
+.contact-page .social-icons:hover {
+  cursor: pointer;
+  color: #718a6f;
+}
+
+.contact-page .section2 {
+  color: white;
+}
+
+.contact-page form {
+  padding-top: 10%;
+  width: 50%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.contact-page label {
+  font-size: 1.2rem;
+}
+
+.contact-page button, .contact-page textarea, .contact-page input {
+  padding: 2% 1%;
+  margin: 2% 0;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.contact-page button {
+  background: none;
+  color: white;
+}
+
+.contact-page button:hover {
+  background: white;
+  color: #2e3d31;
+  cursor: pointer;
 }
 
 * {
@@ -271,7 +349,7 @@ a {
 
 h1 {
   font-size: 7rem;
-  color: #718a6f;
+  color: #2e3d31;
   font-family: "Bad Script", cursive;
 }
 
@@ -285,5 +363,49 @@ p {
 
 .logo-container {
   margin-top: 7%;
+}
+
+.nav-container {
+  width: 50%;
+  padding: 1 2rem;
+}
+
+.nav-container .logo-container {
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#70816b), to(#2e3d31));
+  background-image: linear-gradient(180deg, #70816b, #2e3d31);
+  width: 6rem;
+  height: 6rem;
+}
+
+.nav-container #logo {
+  font-size: 0.1rem;
+  color: white;
+  font-family: "Bad Script", cursive;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.nav-container ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.nav-container li {
+  font-family: "Raleway", sans-serif;
+  color: #718a6f;
 }
 /*# sourceMappingURL=styles.css.map */

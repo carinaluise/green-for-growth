@@ -22,7 +22,7 @@
                 </ul>
             </nav>   
             </div>
-            <h1>About Us</h1> 
+            <h1>About Us . . .</h1> 
           
             <div class=" text-containers tc1"><p class="p1">We at Green for Growth strive for tastier ethical food!</p></div>
             <div class=" text-containers tc2"><p class="p2">The chair of the UN panel on climate change (IPCC), Rajendra Pachauri, says that the best thing people can do to fight against climate change is eat less meat.</p></div>
@@ -41,8 +41,10 @@
         const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
         aboutPageAnimation = () => {
-            tl.to(".tc1 ,.tc2 ,.tc3", { x: "20%",  duration: 1 , stagger: 0.3}) 
-            tl.to(".p1 , .p2 , .p3", { color: "white",  duration: 1 } ) 
+            // tl.to(".tc1 ,.tc2 ,.tc3", { x: "20%",  duration: 1 , stagger: 0.3}) 
+            tl.to(".p1 , .p2 , .p3", { color: "white",  duration: 2 } ) 
+    
+
             
         }
 

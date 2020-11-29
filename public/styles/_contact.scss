@@ -1,0 +1,94 @@
+$main-color: rgb(113, 138, 111);
+$sub-color: rgb(46, 61, 49);
+
+
+.contact-page{
+
+    .main-header{
+        margin: 10% auto;
+        width: 50%;
+        height:20%;
+        background-color: $sub-color;
+        opacity: 0.9;
+        border-radius: 5px;
+    }
+
+    h1{ 
+       text-align: center;
+       color: white;
+    }
+
+    .bg-image{
+        min-height: 80%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+      .img1 { background-image:linear-gradient(0deg, rgba(255,255,255,0.8), rgba(255,255,255,0.2)), url("../assets/11.jpg"); }
+      .img2 {
+          background-color: $sub-color; 
+      }
+
+      .flex-container{
+          margin-top: 5%;
+          display: flex; 
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        
+      }
+
+      .social-icons{
+        font-size: 5rem;
+        color: $sub-color;
+
+        &:hover{
+            cursor: pointer;
+            color: $main-color;
+        }
+      }
+
+      .section2{
+          color: white;
+      }
+
+     form{ 
+        padding-top: 10%;
+        width: 50%;
+        margin: 0 auto;
+        padding: 5% 0;
+     }
+
+     label{
+         font-size: 1.2rem;
+     }
+
+     button, textarea, input{
+        padding: 2% 1%;
+        margin: 2% 0;
+        width: 100%;
+        border: 1px solid white;   
+        border-radius: 5px;
+     }
+
+     button{
+         background: none;
+         
+         color: white;
+     }
+
+     button:hover{
+         background: white;
+         color: $sub-color;
+         cursor: pointer;
+     }
+    
+
+
+
+
+
+
+}

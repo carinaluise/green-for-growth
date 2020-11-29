@@ -8,21 +8,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="nav-container">
-        <nav class="nav">
-            <ul>
-                <a href="/index.html">
-                    <div class="logo-container">
-                    <p id="logo">Green for growth</p>
-                    </div>
-                </a>
-                <a href="./recipes"><li>Recipes</li></a>
-                <a href="./about"><li>About</li></a>
-            </ul>
-        </nav>
-    <h1>Contact </h1>
+<section class="contact-page">
+    <div class="bg-image img1">
+            <div class="nav-container">
+                <nav class="nav">
+                    <ul>
+                        <a href="/index.html">
+                            <div class="logo-container">
+                            <p id="logo">Green for growth</p>
+                            </div>
+                        </a>
+                        <a href="./recipes"><li>Recipes</li></a>
+                        <a href="./about"><li>About</li></a>
+                    </ul>
+                </nav>
+            </div>    
+
+            <div class="main-header">
+                <h1>Contact </h1>
+                
+                <div class="flex-container">
+                    <i class="social-icons fab fa-facebook-f"></i>
+                    <i class="social-icons fab fa-instagram"></i>
+                    <i class="social-icons fab fa-twitter"></i>
+                    <i class="social-icons fab fa-linkedin-in"></i>
+                </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="bg-image img2 section2">
+  
+            <form action="/submit-form" method="POST" class="contact-form">
+                
+                    <label for="email" class="contact-label">Email</label>
+                    <input type="text" name="email" />
+                
+                
+                    <label for="topic" class="contact-label">Topic</label>
+                    <input type="text" name="subject" />
+               
+                
+                    <label for="content" class="contact-label">Query</label>
+                    <textarea name="content" id="" cols="30" rows="10"></textarea>
+                
+               
+                    <button type="submit" class="submit-button">Send Email</button>
+                
+            </form>
+        </div>
+   
+    </section>
     <script>
         document.cookie = "animationSeen = true; path=/"
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('error');
+
+        if(myParam == "Incorrect_Credential") {
+             alert("Incorrect credentials ; please try again")
+        }
     </script>
+    <script src="https://kit.fontawesome.com/6fa7803a52.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
