@@ -8,6 +8,23 @@ $main-font: 'Bad Script', cursive;
 $sub-color: rgb(46, 61, 49);
 
 .homepage{
+
+
+    @media (max-width: 599px){
+        h1{font-size: 3rem;
+            padding: 20% 0;
+        }
+    }
+
+    @media(min-width: 600px){
+        h1{font-size:4rem;
+        padding: 10% 0;}
+    }
+
+    @media (min-width: 800px){
+        h1{font-size: 5rem;
+        padding: 2% 0;}
+    }
     
     :before{
         content: "";
@@ -25,18 +42,21 @@ $sub-color: rgb(46, 61, 49);
     }   
 
 
-    .heading{ 
-        color: $main-color;
-        text-align: center;
-        font-family: $main-font;
-        margin: 15% 5%;
+
+    .heading-container{ 
+        margin: 15% 3%;
         width: 45%;
         height: 20%;
         background-color: $sub-color;
         border-radius: 5px;
-    
+        
     }
 
+    .heading{
+        color: $main-color;
+        text-align: center;
+        font-family: $main-font;
+    }
 }
 
 

@@ -4,18 +4,58 @@ $sub-color: rgb(46, 61, 49);
 
 .contact-page{
 
-    .main-header{
+    @media(max-height: 600px){
+        h1{font-size: 4rem;}
+    }  
+
+    @media(max-height: 315px){
+
+        h1{font-size: 2.5rem;}
+    }
+
+    @media(min-width: 800px){
+        .main-header{
+            margin: 5% auto;
+        }
+        .flex-container{
+            margin: 5% auto;
+            width: 50%;
+        }
+        .bg-image{
+            min-height: 50%;
+        }
+        form{
+            padding: 5% 0;
+        }
+    }
+
+    @media(max-width: 799px){
+       .main-header{ 
         margin: 10% auto;
+       }
+       .flex-container{
+        margin-top: 5%;
+        }
+        form{
+            padding: 20% 0;
+        }
+
+    
+    }
+
+    .main-header{
         width: 50%;
         height:20%;
         background-color: $sub-color;
         opacity: 0.9;
         border-radius: 5px;
+
     }
 
+
     h1{ 
-       text-align: center;
-       color: white;
+        text-align: center;
+        color: white;
     }
 
     .bg-image{
@@ -32,12 +72,8 @@ $sub-color: rgb(46, 61, 49);
       }
 
       .flex-container{
-          margin-top: 5%;
           display: flex; 
-          flex-direction: row;
-          flex-wrap: wrap;
           justify-content: space-evenly;
-        
       }
 
       .social-icons{
@@ -55,10 +91,8 @@ $sub-color: rgb(46, 61, 49);
       }
 
      form{ 
-        padding-top: 10%;
         width: 50%;
         margin: 0 auto;
-        padding: 5% 0;
      }
 
      label{
