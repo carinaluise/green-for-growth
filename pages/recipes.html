@@ -162,6 +162,14 @@
     
     <script>
         document.cookie = "animationSeen = true; expires path=/"
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('error');
+
+        if(myParam == "no-match") {
+             alert("No match found - please scroll through our recipes instead")
+        }
+
+        
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
@@ -169,6 +177,7 @@
     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
     crossorigin="anonymous"
     ></script>
+ 
     
     
     <!-- <script>

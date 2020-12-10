@@ -6,8 +6,10 @@ const { body,validationResult } = require('express-validator');
 const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser');
 const app = express();
+const recipesDB = require('./recipes_db')
 
 const { google } = require("googleapis");
+const { reseller } = require('googleapis/build/src/apis/reseller');
 const OAuth2 = google.auth.OAuth2;
 
 
@@ -20,6 +22,41 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({
   extended: true
 }))
+
+
+app.route('/search')
+
+  .post((req, res) => {
+    
+
+   const keyword = req.body.keyword
+   const lowerCaseKey = keyword.toLowerCase();
+   const replaceKey = lowerCaseKey.replace(/\s/g, "-")
+  
+
+   recipeInformation = []
+
+    recipesDB.Recipes.forEach(element => {
+
+      recipeInformation.push(element.name)
+ 
+    })
+
+    if(recipeInformation.includes(keyword)){
+      res.sendFile(path.join(__dirname + `/pages/${replaceKey}.html`));
+    } else {res.redirect('/recipes?error=' + encodeURIComponent('no-match'))
+
+  }
+
+    
+  });
+
+
+
+
+
+
+
 
 
 app.route('/recipes')

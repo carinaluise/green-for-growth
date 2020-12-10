@@ -9,21 +9,27 @@ $sub-color: rgb(46, 61, 49);
 
 .homepage{
 
-
     @media (max-width: 599px){
-        h1{font-size: 3rem;
-            padding: 20% 0;
+        .heading-container{
+            display: none;
+        }
+    }
+    
+    @media(min-width: 600px) and (max-width: 799px){
+        .heading-container{
+            display: none;
         }
     }
 
-    @media(min-width: 600px){
-        h1{font-size:4rem;
-        padding: 10% 0;}
-    }
-
     @media (min-width: 800px){
-        h1{font-size: 5rem;
-        padding: 2% 0;}
+        h1{
+            font-size: 5rem;
+            padding: 2% 0;}
+
+        .heading-container{
+            margin: 15% 3%;
+        }
+    
     }
     
     :before{
@@ -41,22 +47,23 @@ $sub-color: rgb(46, 61, 49);
         z-index: -1;
     }   
 
-
-
     .heading-container{ 
-        margin: 15% 3%;
-        width: 45%;
-        height: 20%;
-        background-color: $sub-color;
-        border-radius: 5px;
-        
+        margin-top: 5%;
+        width: 50%;
+
+        h1, p, input{
+            text-align: center;
+        }
+
+        input{
+            margin: 5% 15%;
+            width: 70%;
+            height: 5%;
+        }
     }
 
-    .heading{
-        color: $main-color;
-        text-align: center;
-        font-family: $main-font;
-    }
+
+  
 }
 
 
