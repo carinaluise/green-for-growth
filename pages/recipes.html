@@ -24,6 +24,9 @@
                             </ul>
                         </nav>
                     </div>
+                    <div class="search-bar-redirect" id="search1" hidden>
+                        <p class="search-no-match" id="search2" hidden>No match found... Please scroll our recipes instead.</p>
+                    </div>
                     <div class="main-header">
                         <h1>Recipes</h1>
                     </div>
@@ -164,10 +167,19 @@
         document.cookie = "animationSeen = true; expires path=/"
         const urlParams = new URLSearchParams(window.location.search);
         const myParam = urlParams.get('error');
+        const noMatchD= document.getElementById("search1");
+        const noMatchP =document.getElementById("search2");
+       
 
         if(myParam == "no-match") {
-             alert("No match found - please scroll through our recipes instead")
-        }
+            noMatchD.removeAttribute("hidden")
+            noMatchP.removeAttribute("hidden")
+            
+            setTimeout(() => {
+                noMatchP.hidden=true;
+                noMatchD.hidden=true;
+            }, 5000);
+        } 
 
         
     </script>

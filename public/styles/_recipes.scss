@@ -77,6 +77,13 @@ $main-font: 'Bad Script', cursive;
         }
     }
 
+        .nav{
+            li{
+                color: white;
+            }
+        }
+
+
     .recipe-card{
         border: solid $main-color;
         border-radius: 5px;
@@ -137,6 +144,19 @@ $main-font: 'Bad Script', cursive;
                 padding: 10 0;
             }
         }
+    }
+
+    .search-bar-redirect{
+        background-color: white;
+        opacity: 0.7;
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .search-no-match{
+        color: red;
+        text-align: center;
+        font-size: 2rem;
     }
 
 }
