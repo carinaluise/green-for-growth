@@ -52,13 +52,6 @@ app.route('/search')
   });
 
 
-
-
-
-
-
-
-
 app.route('/recipes')
  .get((req, res) => {
   res.sendFile(path.join(__dirname + '/pages/recipes.html'));
@@ -90,7 +83,6 @@ app.route('/submit-form')
       myOAuth2Client.setCredentials({
         refresh_token: process.env.REFRESH_TOKEN
         });
-
 
       const myAccessToken = myOAuth2Client.getAccessToken()
 
