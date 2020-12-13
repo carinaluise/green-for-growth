@@ -43,8 +43,8 @@ app.route('/search')
     })
 
     if(recipeInformation.includes(keyword)){
-      res.sendFile(path.join(__dirname + `/pages/${replaceKey}.html`));
-    } else {res.redirect('/recipes?error=' + encodeURIComponent('no-match'))
+      res.sendFile(path.join(__dirname + `/src/pages/${replaceKey}.html`));
+    } else {res.redirect('/src/recipes?error=' + encodeURIComponent('no-match'))
 
   }
 
@@ -54,17 +54,17 @@ app.route('/search')
 
 app.route('/recipes')
  .get((req, res) => {
-  res.sendFile(path.join(__dirname + '/pages/recipes.html'));
+  res.sendFile(path.join(__dirname + '/src/pages/recipes.html'));
 });
 
 app.route('/about')
  .get((req, res) => {
-  res.sendFile(path.join(__dirname + '/pages/about.html'));
+  res.sendFile(path.join(__dirname + '/src/pages/about.html'));
 });
 
 app.route('/contact')
  .get((req, res) => {
-  res.sendFile(path.join(__dirname + '/pages/contact.html'));
+  res.sendFile(path.join(__dirname + '/src/pages/contact.html'));
 });
 
 app.route('/submit-form')
@@ -105,14 +105,14 @@ app.route('/submit-form')
   };
 
     if (!errors.isEmpty()) {
-      return res.redirect('/contact?error=' + encodeURIComponent('Incorrect_Credential'));  
+      return res.redirect('/src/contact?error=' + encodeURIComponent('Incorrect_Credential'));  
       // return res.status(400).json({errors: errors.array()});
 
     } else {
       transport.sendMail(emailOptions, function(error, info){
         if(error){
             console.log('Message Error - please check your credentials and try again')
-            res.redirect("/contact")
+            res.redirect("/src/contact")
         }else{
             console.log('Message sent: ' + info.response);
             alert("Your email has been successfully sent")
