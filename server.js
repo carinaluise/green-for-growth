@@ -116,7 +116,7 @@ app.route('/submit-form')
       transport.sendMail(emailOptions, function(error, info){
         if(error){
             console.log('Message Error - please check your credentials and try again')
-            res.redirect("/pages/contact")
+            res.redirect("/public/pages/contact.html")
         }else{
             console.log('Message sent: ' + info.response);
             alert("Your email has been successfully sent")
