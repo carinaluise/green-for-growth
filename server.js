@@ -116,6 +116,7 @@ app.route('/submit-form')
       transport.sendMail(emailOptions, function(error, info){
         
         if(error){
+            console.log(error)
             res.redirect('/contact?error=' + encodeURIComponent('Message_failed'))
         }else{
          
