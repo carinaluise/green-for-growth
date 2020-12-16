@@ -46,6 +46,14 @@
     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
     crossorigin="anonymous"
     ></script>
+    <script> 
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('success');
+
+        if(myParam == "email_success") {
+             alert("Email successfully sent. Thank you for contacting us. We will be in touch.")
+        }
+</script>
     <script src="./timeline.js"></script>
 </body>
 </html> 

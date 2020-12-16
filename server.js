@@ -114,13 +114,15 @@ app.route('/submit-form')
 
     } else {
       transport.sendMail(emailOptions, function(error, info){
+        
         if(error){
-            console.log('Message Error - please check your credentials and try again')
-            res.redirect("/contact")
+            res.redirect('/contact?error=' + encodeURIComponent('Message_failed'))
         }else{
-            console.log('Message sent: ' + info.response);
-            alert("Your email has been successfully sent")
-            res.redirect("/");
+         
+          console.log(info)
+        
+          return res.redirect('/index.html?success=' + encodeURIComponent('email_success')); 
+  
         };
     });
     }
