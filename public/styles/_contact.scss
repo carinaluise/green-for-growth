@@ -15,7 +15,7 @@ $sub-color: rgb(46, 61, 49);
 
     @media(min-width: 800px){
         .main-header{
-            margin: 5% auto;
+            margin: 5% 25%;
         }
         .flex-container{
             margin: 5% auto;
@@ -31,7 +31,7 @@ $sub-color: rgb(46, 61, 49);
 
     @media(max-width: 799px){
        .main-header{ 
-        margin: 10% auto;
+        margin: 10% 25%;
        }
        .flex-container{
         margin-top: 5%;

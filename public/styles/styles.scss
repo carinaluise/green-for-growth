@@ -37,7 +37,7 @@ a{
 
  h1{
      font-size: 7rem;
-     color: $sub-color;
+     color: $main-color;
      font-family: $main-font;
  }
 
@@ -54,6 +54,11 @@ a{
      margin-top: 7%;
  }
 
+ div{
+    display: inline-block;
+    width: 100%;
+
+}
 
 
 .nav-container{
@@ -74,7 +79,7 @@ a{
     
     #logo{
     
-        font-size: 0.1rem;
+        font-size: 1rem;
         color: white;
         font-family: $main-font;
         text-align: center;
@@ -83,10 +88,9 @@ a{
 
     ul {
 
-        @media(min-width: 800px) {
+        @media screen and (min-width: 800px) {
             font-size: 1.6rem;
         }
-        padding-inline-start: 0;
         font-size: 1rem;
         display: flex;
         justify-content: space-between;

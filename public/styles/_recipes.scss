@@ -6,6 +6,7 @@ $main-font: 'Bad Script', cursive;
 .recipe-page{
     
 
+
     @media (max-width: 690px){
         .flex-box-container{
             padding: 15% 0;
@@ -33,7 +34,7 @@ $main-font: 'Bad Script', cursive;
         background-size: cover;
       }
 
-      .img1 { background-image: url("/assets/7.jpg"); }
+      .img1 { background-image: url("/assets/7.jpg");}
       .img2 { background-image: url("/assets/6.jpg");}
       .img3 { background-image: url("/assets/7.jpg");} 
    
@@ -52,14 +53,14 @@ $main-font: 'Bad Script', cursive;
 
     h1{ 
         color: $sub-color;
-        margin: 2% 6%;
+        margin: 1% 6%;
       
     }
 
     .main-header{
-        margin: 10% auto;
+        margin: 10% 25%;
         text-align: center;
-        width: 50%;
+        max-width: 50%;
         height: 20%;
         background-color: white;
         opacity: 0.7;

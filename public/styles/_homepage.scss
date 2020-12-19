@@ -62,6 +62,18 @@ $sub-color: rgb(46, 61, 49);
         }
     }
 
+    input {
+        background-color: #ffffff;
+        border-color: #eeeeee;
+        font-family: $sub-font;
+        border-style:solid;
+        
+
+        &::placeholder{
+            color: rgb(182, 182, 182);
+        }
+    }
+
 
   
 }
