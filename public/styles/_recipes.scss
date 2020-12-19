@@ -36,7 +36,10 @@ $main-font: 'Bad Script', cursive;
 
       .img1 { background-image: url("/assets/7.jpg");}
       .img2 { background-image: url("/assets/6.jpg");}
-      .img3 { background-image: url("/assets/7.jpg");} 
+      .img3 { 
+          background-image: url("/assets/7.jpg");
+            height: 400px;
+        } 
    
 
     /////// CONTENT ///////

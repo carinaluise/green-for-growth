@@ -152,6 +152,7 @@
 
 .recipe-page .img3 {
   background-image: url("/assets/7.jpg");
+  height: 400px;
 }
 
 .recipe-page .flex-box-container {
