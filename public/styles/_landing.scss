@@ -4,11 +4,11 @@ $main-font: 'Bad Script', cursive;
 
 
 .landing{
-    
-    background-image: url("/assets/4.jpg");
+    background-image: url("/assets/6.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
+    background-color: white;
     position: fixed;
     display: flex;
     top: 0;
@@ -17,14 +17,16 @@ $main-font: 'Bad Script', cursive;
     height: 100%;
     
     h3{ 
+        display: block;
         margin: 0 auto;
-        transform: translateY(-20%);
+        transform: translateY(-75%);
         padding: 0 5%;
         font-family:$main-font;
-        color: black;
+        color: $main-color;
         font-size: 5rem;
     }
 
+   
     .hide{
         overflow: hidden;
         display: inline-block;

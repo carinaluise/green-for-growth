@@ -76,10 +76,11 @@
 }
 
 .landing {
-  background-image: url("/assets/4.jpg");
+  background-image: url("/assets/6.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  background-color: white;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,12 +92,13 @@
 }
 
 .landing h3 {
+  display: block;
   margin: 0 auto;
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
   padding: 0 5%;
   font-family: "Bad Script", cursive;
-  color: black;
+  color: #718a6f;
   font-size: 5rem;
 }
 
@@ -272,25 +274,16 @@
   font-size: 2rem;
 }
 
-.about-page:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: url("/assets/2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* or contain depending on what you want */
-  background-position: center;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  z-index: -1;
-  overflow: hidden;
-}
-
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
+  .about-page .main-header {
+    margin: 5% 25%;
+  }
+  .about-page .bg-image {
+    height: 70%;
+  }
+  .about-page h1 {
+    padding-top: 2.5%;
+  }
   .about-page p {
     font-size: 2rem;
     padding: 5%;
@@ -298,9 +291,18 @@
   .about-page .p2 {
     padding: 2%;
   }
+  .about-page .text-containers {
+    margin-top: 1.5%;
+  }
 }
 
-@media (max-width: 799px) {
+@media screen and (max-width: 799px) {
+  .about-page .main-header {
+    margin: 10% 25%;
+  }
+  .about-page .bg-image {
+    height: 70%;
+  }
   .about-page p {
     font-size: 1.5rem;
     padding: 8%;
@@ -308,10 +310,42 @@
   .about-page .p2 {
     padding: 4%;
   }
+  .about-page h1 {
+    padding-top: 15%;
+    font-size: 5rem;
+  }
+  .about-page .text-containers {
+    margin-top: 5%;
+  }
+}
+
+.about-page .bg-image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-page .img1 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2))), url("/assets/12.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url("/assets/12.jpg");
+}
+
+.about-page .img2 {
+  padding: 5% 0;
+  background-color: #b1beb2;
+}
+
+.about-page .main-header {
+  width: 50%;
+  height: 30%;
+  background-color: #b1beb2;
+  opacity: 0.9;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .about-page h1 {
-  margin-left: 30px;
   color: #2e3d31;
 }
 
@@ -321,11 +355,11 @@
 
 .about-page .text-containers {
   text-align: center;
-  margin-top: 1.5%;
-  height: 15%;
+  height: 20%;
   width: 70%;
   background: #2e3d31;
   border-radius: 5px;
+  opacity: 0.9;
 }
 
 .about-page .tc1, .about-page .tc2, .about-page .tc3 {
@@ -333,19 +367,19 @@
           transform: translateX(20%);
 }
 
-@media (max-height: 600px) {
+@media screen and (max-height: 600px) {
   .contact-page h1 {
     font-size: 4rem;
   }
 }
 
-@media (max-height: 315px) {
+@media screen and (max-height: 315px) {
   .contact-page h1 {
     font-size: 2.5rem;
   }
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
   .contact-page .main-header {
     margin: 5% 25%;
   }
@@ -366,15 +400,11 @@
     margin: 10% 25%;
   }
   .contact-page .flex-container {
-    margin-top: 5%;
+    margin: 5% 0;
   }
   .contact-page form {
     padding: 20% 0;
   }
-}
-
-.contact-page .nav li {
-  color: white;
 }
 
 .contact-page .main-header {

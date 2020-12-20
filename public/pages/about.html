@@ -9,6 +9,7 @@
 </head>
 <body>
 <section class="about-page">
+    <div class="bg-image img1">
         <div class="nav-container">
             <nav class="nav">
                 <ul>
@@ -21,17 +22,18 @@
                     <a href="./contact"><li>Contact</li></a>
                 </ul>
             </nav>   
-            </div>
-            <h1>About Us . . .</h1> 
+        </div>
+        <div class="main-header">
+            <h1>About Us</h1>
+        </div>
+    </div> 
+    <div class="bg-image img2">     
           
             <div class=" text-containers tc1"><p class="p1">We at Green for Growth strive for tastier ethical food!</p></div>
             <div class=" text-containers tc2"><p class="p2">The chair of the UN panel on climate change (IPCC), Rajendra Pachauri, says that the best thing people can do to fight against climate change is eat less meat.</p></div>
             <div class=" text-containers tc3"><p class="p3">Follow us for all the best vegan recipes, tips and facts</p></div>
-
-</section>
-    <script>
-        document.cookie = "animationSeen = true; path=/"
-    </script>
+    </div>  
+    </section>
       <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
@@ -41,11 +43,7 @@
         const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
         aboutPageAnimation = () => {
-            // tl.to(".tc1 ,.tc2 ,.tc3", { x: "20%",  duration: 1 , stagger: 0.3}) 
-            tl.to(".p1 , .p2 , .p3", { color: "white",  duration: 2 } ) 
-    
-
-            
+            tl.to(".p1 , .p2 , .p3", { color: "white",  duration: 8 } ) 
         }
 
         aboutPageAnimation();

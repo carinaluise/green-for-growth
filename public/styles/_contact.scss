@@ -4,16 +4,16 @@ $sub-color: rgb(46, 61, 49);
 
 .contact-page{
 
-    @media(max-height: 600px){
+    @media screen and (max-height: 600px){
         h1{font-size: 4rem;}
     }  
 
-    @media(max-height: 315px){
+    @media screen and (max-height: 315px){
 
         h1{font-size: 2.5rem;}
     }
 
-    @media(min-width: 800px){
+    @media screen and (min-width: 800px){
         .main-header{
             margin: 5% 25%;
         }
@@ -34,18 +34,13 @@ $sub-color: rgb(46, 61, 49);
         margin: 10% 25%;
        }
        .flex-container{
-        margin-top: 5%;
+        margin: 5% 0;
         }
         form{
             padding: 20% 0;
         }
 
     
-    }
-    .nav{
-        li{
-            color: white;
-        }
     }
 
     .main-header{
