@@ -34,12 +34,9 @@ $main-font: 'Bad Script', cursive;
         background-size: cover;
       }
 
-      .img1 { background-image: url("/assets/7.jpg");}
-      .img2 { background-image: url("/assets/6.jpg");}
-      .img3 { 
-          background-image: url("/assets/7.jpg");
-            height: 400px;
-        } 
+      .img1 , .img3 { background-image: url("/assets/recipes_page_1920x1080.jpeg");}
+      .img2 { background-image: url("/assets/recipes_page_filler.jpg");}
+      .img3 { height: 400px;} 
    
 
     /////// CONTENT ///////
