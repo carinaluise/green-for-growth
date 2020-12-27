@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT GFG</title>
+    <meta name="Description" content="Green for Growth About Page where you can find out about the companies main ideas and what we stand for.">
     <link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -14,13 +15,24 @@
             <nav class="nav">
                 <ul>
                     <a href="/">
-                        <div class="logo-container">
+                        <div id="logo-container">
                         <p id="logo">Green for growth</p>
                         </div>
                     </a>
                     <a href="./recipes"><li>Recipes</li></a>
                     <a href="./contact"><li>Contact</li></a>
                 </ul>
+                <div id="dropdown"">
+                    <div id="dropdown-logo" class="logo-container" >
+                        <p id="logo">Green for growth</p>
+                    </div>
+                    <div id="dropdown-content">
+                        <a  class="dropdown-l" style="display: none;" href="/">Home</a>
+                        <a  class="dropdown-l" style="display: none;" href="./recipes">Recipes</a>
+                        <a  class="dropdown-l" style="display: none;" href="./about">About</a>
+                        <a  class="dropdown-l" style="display: none;" href="./contact">Contact</a>
+                    </div>
+                </div>
             </nav>   
         </div>
         <div class="main-header">
@@ -50,5 +62,6 @@
 
 
       </script>
+      <script src="/navbar.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Green for Growth Recipes Page where you can find yummy vegan sustainable recipes to make from scratch">
     <title>GFG RECIPES</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
@@ -15,13 +16,24 @@
                         <nav class="nav">
                             <ul>
                                 <a href="/">
-                                    <div class="logo-container">
+                                    <div id="logo-container">
                                     <p id="logo">Green for growth</p>
                                     </div>
                                 </a>
                                 <a href="./about"><li>About</li></a>
                                 <a href="./contact"><li>Contact</li></a>
                             </ul>
+                            <div id="dropdown"">
+                                <div id="dropdown-logo" class="logo-container" >
+                                    <p id="logo">Green for growth</p>
+                                </div>
+                                <div id="dropdown-content">
+                                    <a  class="dropdown-l" style="display: none;" href="/">Home</a>
+                                    <a  class="dropdown-l" style="display: none;" href="./recipes">Recipes</a>
+                                    <a  class="dropdown-l" style="display: none;" href="./about">About</a>
+                                    <a  class="dropdown-l" style="display: none;" href="./contact">Contact</a>
+                                </div>
+                            </div>
                         </nav>
                     </div>
                     <div class="search-bar-redirect" id="search1" hidden>
@@ -182,6 +194,7 @@
 
         
     </script>
+    <script src="/navbar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
