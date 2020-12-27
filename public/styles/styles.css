@@ -537,7 +537,7 @@ div {
   padding: 1rem;
 }
 
-.nav-container .logo-container {
+.nav-container #logo-container {
   margin-top: 7%;
   border-radius: 50%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#70816b), to(#2e3d31));
@@ -546,7 +546,7 @@ div {
   height: 10rem;
 }
 
-.nav-container .logo-container:hover {
+.nav-container #logo-container:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2e3d31), to(#70816b));
   background-image: linear-gradient(180deg, #2e3d31, #70816b);
 }
