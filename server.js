@@ -47,7 +47,7 @@ app.route('/search')
     })
 
     if(recipeInformation.includes(keyword)){
-      res.sendFile(path.join(__dirname + `/pages/${replaceKey}.html`));
+      res.sendFile(path.join(__dirname + `/public/pages/${replaceKey}.html`));
     } else {res.redirect('/recipes?error=' + encodeURIComponent('no-match'))
 
   }
