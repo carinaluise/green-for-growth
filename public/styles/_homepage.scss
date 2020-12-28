@@ -7,6 +7,37 @@ $sub-font: 'Raleway', sans-serif;
 $main-font: 'Bad Script', cursive;
 $sub-color: rgb(46, 61, 49);
 
+.webp .homepage :before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("/assets/homepage_1920x1080.webp");
+    background-repeat: no-repeat;
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center;
+    transform: scaleX(-1);
+    z-index: -1;
+}   
+
+.no-webp .homepage :before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("/assets/homepage_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center;
+    transform: scaleX(-1);
+    z-index: -1;
+}   
+
+
 .homepage{
 
     @media (max-width: 599px){
@@ -32,21 +63,6 @@ $sub-color: rgb(46, 61, 49);
     
     }
     
-    :before{
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: url("/assets/homepage_1920x1080.jpg");
-        background-repeat: no-repeat;
-        background-size: cover; /* or contain depending on what you want */
-        background-position: center;
-        transform: scaleX(-1);
-        z-index: -1;
-    }   
-
     .heading-container{ 
         margin-top: 5%;
         width: 50%;

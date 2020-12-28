@@ -53,5 +53,15 @@
         }
 </script>
 <script src="/navbar.js"></script>
+<script src="/modernizr-custom.js"></script>
+<script>
+    Modernizr.on('webp', function (result) {
+      if (result) {
+        console.log(result)
+      } else {
+        // not-supported
+      }
+    });
+  </script>
 </body>
 </html> 

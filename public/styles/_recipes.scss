@@ -3,6 +3,13 @@ $sub-color: rgb(46, 61, 49);
 $sub-font: 'Raleway', sans-serif;
 $main-font: 'Bad Script', cursive;
 
+.webp .recipe-page .img1 { background-image: url("/assets/recipes_page_1920x1080.webp"); }
+.no-webp .recipe-page .img1 { background-image: url("/assets/recipes_page_1920x1080.jpeg"); }
+.webp .recipe-page .img3 { background-image: url("/assets/recipes_page_1920x1080.webp"); }
+.no-webp .recipe-page .img3 { background-image: url("/assets/recipes_page_1920x1080.jpeg"); }
+.webp .recipe-page .img2{ background-image: url("/assets/recipes_page_filler.webp");}
+.no-webp .recipe-page .img2{ background-image: url("/assets/recipes_page_filler.jpeg");}
+
 .recipe-page{
     
     @media screen and (max-height: 600px){
@@ -42,8 +49,6 @@ $main-font: 'Bad Script', cursive;
         background-size: cover;
       }
 
-      .img1 , .img3 { background-image: url("/assets/recipes_page_1920x1080.jpeg");}
-      .img2 { background-image: url("/assets/recipes_page_filler.jpg");}
       .img3 { height: 400px;} 
    
 

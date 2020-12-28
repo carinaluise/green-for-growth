@@ -1,3 +1,37 @@
+.webp .homepage :before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/assets/homepage_1920x1080.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* or contain depending on what you want */
+  background-position: center;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  z-index: -1;
+}
+
+.no-webp .homepage :before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/assets/homepage_1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* or contain depending on what you want */
+  background-position: center;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  z-index: -1;
+}
+
 @media (max-width: 599px) {
   .homepage .heading-container {
     display: none;
@@ -18,23 +52,6 @@
   .homepage .heading-container {
     margin: 15% 3%;
   }
-}
-
-.homepage :before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: url("/assets/homepage_1920x1080.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* or contain depending on what you want */
-  background-position: center;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  z-index: -1;
 }
 
 .homepage .heading-container {
@@ -75,6 +92,30 @@
   color: #b6b6b6;
 }
 
+.webp .recipe-page .img1 {
+  background-image: url("/assets/recipes_page_1920x1080.webp");
+}
+
+.no-webp .recipe-page .img1 {
+  background-image: url("/assets/recipes_page_1920x1080.jpeg");
+}
+
+.webp .recipe-page .img3 {
+  background-image: url("/assets/recipes_page_1920x1080.webp");
+}
+
+.no-webp .recipe-page .img3 {
+  background-image: url("/assets/recipes_page_1920x1080.jpeg");
+}
+
+.webp .recipe-page .img2 {
+  background-image: url("/assets/recipes_page_filler.webp");
+}
+
+.no-webp .recipe-page .img2 {
+  background-image: url("/assets/recipes_page_filler.jpeg");
+}
+
 @media screen and (max-height: 600px) {
   .recipe-page h1 {
     font-size: 4rem;
@@ -111,14 +152,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.recipe-page .img1, .recipe-page .img3 {
-  background-image: url("/assets/recipes_page_1920x1080.jpeg");
-}
-
-.recipe-page .img2 {
-  background-image: url("/assets/recipes_page_filler.jpg");
 }
 
 .recipe-page .img3 {
@@ -242,6 +275,16 @@
   font-size: 2rem;
 }
 
+.webp .about-page .img1 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2))), url("/assets/about_page_1920x1080.webp");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url("/assets/about_page_1920x1080.webp");
+}
+
+.no-webp .about-page .img1 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2))), url("/assets/about_page_1920x1080.jpeg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url("/assets/about_page_1920x1080.jpeg");
+}
+
 @media screen and (max-height: 600px) {
   .about-page h1 {
     font-size: 4rem;
@@ -266,10 +309,10 @@
   }
   .about-page p {
     font-size: 2rem;
-    padding: 5%;
+    padding: 8%;
   }
   .about-page .p2 {
-    padding: 2%;
+    padding: 5%;
   }
   .about-page .text-containers {
     margin-top: 1.5%;
@@ -306,11 +349,6 @@
   background-size: cover;
 }
 
-.about-page .img1 {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2))), url("/assets/about_page_1920x1080.jpeg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url("/assets/about_page_1920x1080.jpeg");
-}
-
 .about-page .img2 {
   padding: 5% 0;
   background-color: #b1beb2;
@@ -345,6 +383,16 @@
 .about-page .tc1, .about-page .tc2, .about-page .tc3 {
   -webkit-transform: translateX(20%);
           transform: translateX(20%);
+}
+
+.webp .contact-page .img1 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2))), url("/assets/contact_page_1920x1080.webp");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url("/assets/contact_page_1920x1080.webp");
+}
+
+.no-webp .contact-page .img1 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2))), url("/assets/contact_page_1920x1080.jpeg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url("/assets/contact_page_1920x1080.jpeg");
 }
 
 @media screen and (max-height: 600px) {
@@ -406,11 +454,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.contact-page .img1 {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2))), url("/assets/contact_page_1920x1080.jpeg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url("/assets/contact_page_1920x1080.jpeg");
 }
 
 .contact-page .img2 {
