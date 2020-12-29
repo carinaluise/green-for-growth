@@ -500,6 +500,11 @@
   border-radius: 5px;
 }
 
+.contact-page textarea, .contact-page input {
+  cursor: text;
+  caret-color: black;
+}
+
 .contact-page button {
   background: none;
   color: white;
@@ -509,6 +514,25 @@
   background: white;
   color: #2e3d31;
   cursor: pointer;
+}
+
+.redirect-page h1 {
+  padding-top: 150px;
+}
+
+.redirect-page h1, .redirect-page p, .redirect-page a {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+.redirect-page .redirect-link {
+  text-decoration: underline;
+}
+
+.redirect-page .img1 {
+  background-color: #2e3d31;
+  height: 100vh;
 }
 
 * {
@@ -528,7 +552,7 @@ body {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 h1 {

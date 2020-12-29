@@ -2,6 +2,7 @@
 @import "recipes";
 @import "about";
 @import "contact";
+@import "redirect";
 
 
 $sub-font: 'Raleway', sans-serif;
@@ -30,7 +31,7 @@ body {
 }
 
 a{ 
-    text-decoration: none !important;
+    text-decoration: none;
  }
 
  h1{

@@ -1,0 +1,28 @@
+// .webp .success-page .img1 { background-image: url("/assets/about_page_1920x1080.webp"); }
+// .no-webp .success-page .img1 { background-image: url("/assets/about_page_1920x1080.jpeg"); }
+
+$main-color: rgb(113, 138, 111);
+$sub-color: rgb(46, 61, 49);
+
+.redirect-page {
+
+h1{
+    padding-top: 150px;
+}
+    
+h1, p, a {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.redirect-link{
+    text-decoration: underline;
+}
+
+.img1{
+    background-color: $sub-color;
+    height: 100vh;
+}
+    
+}

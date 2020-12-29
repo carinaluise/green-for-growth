@@ -71,12 +71,23 @@ app.route('/contact')
   res.sendFile(path.join(__dirname + '/public/pages/contact.html'));
 });
 
+app.route('/success')
+ .get((req, res) => {
+  res.sendFile(path.join(__dirname + '/public/pages/success.html'));
+});
+
+app.route('/error')
+ .get((req, res) => {
+  res.sendFile(path.join(__dirname + '/public/pages/error.html'));
+});
+
 app.route('/submit-form')
   .post([body('email').isEmail()],(req,res) => {
     const errors = validationResult(req);
     const email = req.body.email
     const topic = req.body.topic
     const content = req.body.content
+    const body = `${email} sent a message with the topic: ${topic} and content: ${content} `
   
       const myOAuth2Client = new OAuth2(
       process.env.CLIENT_ID,
@@ -101,28 +112,27 @@ app.route('/submit-form')
              accessToken: myAccessToken //access token variable we defined earlier
         }});
 
-    const emailOptions = {
-      from: email, 
-      to: process.env.SECRET_EMAIL, 
-      subject: topic, 
-      text: content
-  };
+      const mailOptions = {
+        from: email, 
+        to: process.env.SECRET_EMAIL, 
+        subject: topic, 
+        text: body
+      };
 
     if (!errors.isEmpty()) {
-      return res.redirect('/contact?error=' + encodeURIComponent('Incorrect_Credential'));  
-      // return res.status(400).json({errors: errors.array()});
+       res.sendFile(path.join(__dirname + '/public/pages/error.html'))
 
     } else {
-      transport.sendMail(emailOptions, function(error, info){
+      transport.sendMail(mailOptions, function(error, info){
         
         if(error){
             console.log(error)
-            res.redirect('/contact?error=' + encodeURIComponent('Message_failed'))
+            res.sendFile(path.join(__dirname + '/public/pages/error.html'))
         }else{
          
           console.log(info)
         
-          return res.redirect('/index.html?success=' + encodeURIComponent('email_success')); 
+          res.sendFile(path.join(__dirname + '/public/pages/success.html'))
   
         };
     });

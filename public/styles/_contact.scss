@@ -109,9 +109,13 @@ $sub-color: rgb(46, 61, 49);
         border-radius: 5px;
      }
 
+     textarea , input {
+         cursor: text;
+         caret-color: black; 
+     }
+
      button{
          background: none;
-         
          color: white;
      }
 
